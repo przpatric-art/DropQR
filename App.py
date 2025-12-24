@@ -92,6 +92,6 @@ with col2:
         with open(os.path.join(folder, item), "rb") as fb:
             st.download_button(f"📥 {item}", fb, file_name=item, use_container_width=True)
 
-if st.sidebar.button("🗑️ Reset"):
+if st.sidebar.button("🔒 Cerrar y Limpiar"):
     st.session_state.clear()
     st.rerun()
